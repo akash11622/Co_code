@@ -17,6 +17,10 @@ app.use(
   })
 );
 app.use(express.json());
+
+app.get("/api",(req,res)=>{
+  res.send('backend server is up and running');
+})
 // route for signup user and login user
 app.use("/api/user", userRouter);
 app.use("/api/Flushroom", webSocketRouter);

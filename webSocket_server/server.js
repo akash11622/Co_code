@@ -130,9 +130,9 @@ app.post('/upload', upload.single('file'), (req, res) => {
         fileContent
     })
 })
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.get("/",(req,res)=>{
+    res.send('socket server is up and running');
+  })
 
 
 server.listen(PORT, () => {

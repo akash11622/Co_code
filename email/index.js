@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors')
 app.use(cors())
 app.get('/',(req,res)=>{
-  res.send('server is up and running ready to send the emails');
+  res.send('email server is up and running ready to send the emails');
 })
 app.use(express.json());
 const transporter = nodemailer.createTransport({
